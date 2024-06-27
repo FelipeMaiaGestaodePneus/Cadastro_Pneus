@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pneus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Pneus</h1>
+        <label for="numRows">Número de linhas:</label>
+        <input type="number" id="numRows" min="1" value="1">
+        <button id="generateTable">Gerar Tabela</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Fogo</th>
+                    <th>Marca <button class="replicate-button" data-col="marca">Replicar</button></th>
+                    <th>Modelo <button class="replicate-button" data-col="modelo">Replicar</button></th>
+                    <th>Medida <button class="replicate-button" data-col="medida">Replicar</button></th>
+                    <th>DOT <button class="replicate-button" data-col="dot">Replicar</button></th>
+                    <th>Vida <button class="replicate-button" data-col="vida">Replicar</button></th>
+                    <th>Marca Recape <button class="replicate-button" data-col="marcaRecape">Replicar</button></th>
+                    <th>Modelo Recape <button class="replicate-button" data-col="modeloRecape">Replicar</button></th>
+                    <th>Milimetragem <button class="replicate-button" data-col="milimetragem">Replicar</button></th>
+                    <th>Status <button class="replicate-button" data-col="status">Replicar</button></th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+        
+        <button id="exportToExcel">Exportar para Excel</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
